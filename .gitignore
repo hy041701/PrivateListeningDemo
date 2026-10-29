@@ -1,0 +1,39 @@
+*.iml
+.gradle/
+.idea/
+.kotlin/
+local.properties
+**/build/
+captures/
+*.jks
+*.keystore
+keystore.properties
+secrets.properties
+.env
+.env.*
+
+# Build artifacts and local media
+*.apk
+*.aab
+*.mp4
+*.mtv
+
+# Personal reports, documents, diagnostics and backups
+/reports/
+/docs/
+/backups/
+/同屏自在听项目技术报告.md
+/phone-audio-test.txt
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.pdf
+*.log
+*.zip
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+

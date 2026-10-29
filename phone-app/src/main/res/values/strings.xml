@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_title">同屏自在听</string>
+    <string name="listening_mark">♪</string>
+    <string name="app_subtitle">大屏看画面 · 手机听声音</string>
+    <string name="not_connected">尚未连接电视</string>
+    <string name="same_wifi_hint">手机与电视需连接同一 Wi-Fi。</string>
+    <string name="connection_status_label">连接状态</string>
+    <string name="scan_tv">扫一扫连接电视</string>
+    <string name="exit_listening">退出连接</string>
+    <string name="realign_tv">音画对齐</string>
+    <string name="headphone_status">音频输出</string>
+    <string name="headphone_mark">声</string>
+    <string name="checking_headphones">正在检查音频输出…</string>
+    <string name="listening_requirements">同一 Wi-Fi · 支持蓝牙耳机、有线耳机或手机外放</string>
+    <string name="select_audio_output">切换音频输出</string>
+    <string name="timeline_diagnostics_title">诊断时间线（每秒更新）</string>
+    <string name="timeline_diagnostics_waiting">连接并开始播放后，这里每秒显示一次电视与手机的完整时间线。</string>
+    <string name="scanner_title">扫描电视二维码</string>
+    <string name="scanner_subtitle">将电视自在听浮窗中的二维码放入取景框</string>
+    <string name="scanner_hint">请保持手机与电视连接同一 Wi-Fi</string>
+    <string name="close_scanner">关闭扫码页面</string>
+    <string name="back_mark">‹</string>
+</resources>

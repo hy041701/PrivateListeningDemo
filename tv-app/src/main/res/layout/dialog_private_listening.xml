@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="28dp"
+    android:background="@drawable/bg_dialog_panel">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同屏自在听"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="视频已暂停。请打开手机应用，使用扫一扫连接。"
+        android:textSize="16sp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="#B7C5D8" />
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_qr_frame"
+        android:padding="6dp">
+
+        <ImageView
+            android:id="@+id/pairing_qr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:contentDescription="手机连接二维码" />
+
+        <TextView
+            android:id="@+id/qr_hint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="配对服务尚未接入"
+            android:textSize="16sp"
+            android:textColor="#334155" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/connection_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="手机：未连接"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/audio_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="音频：未准备"
+        android:textSize="16sp"
+        android:textColor="#CBD5E1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/cancel_listening"
+            style="@style/ControlButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/start_listening"
+            style="@style/PrimaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:enabled="false"
+            android:text="开始自在听" />
+
+    </LinearLayout>
+
+</LinearLayout>

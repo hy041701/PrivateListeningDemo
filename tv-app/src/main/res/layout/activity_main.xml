@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Media3 提供普通播放器所需的播放/暂停、进度条和快进快退等标准控制。 -->
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/player_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#050A11"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:keep_content_on_player_reset="true"
+        app:controller_layout_id="@layout/exo_player_control_view"
+        app:show_buffering="when_playing"
+        app:use_controller="true" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_margin="24dp"
+        android:background="@drawable/bg_status_pill"
+        android:paddingStart="18dp"
+        android:paddingTop="11dp"
+        android:paddingEnd="18dp"
+        android:paddingBottom="11dp"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <!-- IPTV 风格片库：视频文件仍在固定目录，点击封面后才交给播放器。 -->
+    <LinearLayout
+        android:id="@+id/video_library"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_app_gradient"
+        android:orientation="vertical"
+        android:paddingStart="48dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="48dp"
+        android:paddingBottom="36dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.02"
+            android:text="同屏自在听"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/library_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="选择节目开始播放 · 按遥控器上键唤起播放控制"
+            android:textColor="#AFC0D5"
+            android:textSize="17sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="28dp"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:fillViewport="false">
+
+            <LinearLayout
+                android:id="@+id/video_cards"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp" />
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/refresh_library"
+                style="@style/ControlButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷新固定片库" />
+
+            <Button
+                android:id="@+id/choose_media"
+                style="@style/PrimaryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="从系统媒体库选择" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,88 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorAccent">#FF9650</item>
+        <item name="android:statusBarColor">#08111F</item>
+        <item name="android:navigationBarColor">#08111F</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowBackground">@drawable/bg_app_gradient</item>
+        <item name="android:alertDialogTheme">@style/AppDialogTheme</item>
+    </style>
+
+    <style name="AppDialogTheme" parent="android:style/Theme.Material.Dialog.Alert">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:colorAccent">#FF9650</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#B7C5D8</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_panel</item>
+    </style>
+
+    <style name="PhoneButton" parent="android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/bg_button_secondary</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="PhonePrimaryButton" parent="PhoneButton">
+        <item name="android:background">@drawable/bg_button_primary</item>
+        <item name="android:textColor">#121A25</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PhonePageTitle" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">29sp</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="PhonePageSubtitle" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#9AAAC0</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="PhoneCardLabel" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#8FA3BA</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+
+    <style name="PhoneCardTitle" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="PhoneCardValue" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#F4F7FB</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="PhoneBody" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#C3CEDC</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+    </style>
+
+    <style name="PhoneFootnote" parent="android:style/Widget.TextView">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">#71849B</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="PhoneScannerTitle" parent="PhonePageTitle">
+        <item name="android:textSize">26sp</item>
+    </style>
+</resources>
+

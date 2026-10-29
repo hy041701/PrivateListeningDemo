@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  JourneyApps 默认取景层会在相机画面上绘制一块灰色直角遮罩。
+  这里保留识别视图和橙色扫描线，去掉遮罩，让外层圆角成为唯一视觉边框。
+-->
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.journeyapps.barcodescanner.BarcodeView
+        android:id="@+id/zxing_barcode_surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.journeyapps.barcodescanner.ViewfinderView
+        android:id="@+id/zxing_viewfinder_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_possible_result_points="#FFFFB079"
+        app:zxing_viewfinder_laser="#FFFF9650"
+        app:zxing_viewfinder_mask="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/zxing_status_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+</merge>
